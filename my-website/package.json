@@ -1,0 +1,10 @@
+{
+  "name": "misitio-simple",
+  "version": "0.1.0",
+  "description": "Plantilla simple estática con HTML/CSS/JS",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --directory src"
+  },
+  "author": "",
+  "license": "MIT"
+}

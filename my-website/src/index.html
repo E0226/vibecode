@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Altavoces — VibeCode Audio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+  <h1 class="logo">VibeCode Audio</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#products">Productos</a>
+        <a href="#about">Reviews</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Altavoces que llenan tu espacio</h2>
+        <p>Sonido claro, graves profundos y diseño pensado para cualquier habitación.</p>
+        <a class="btn" href="#products">Ver productos</a>
+      </div>
+    </section>
+
+    <section id="products" class="container products">
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/vibe-mini.svg" alt="Vibe Mini" class="product-img">
+        </div>
+        <h4>Vibe Mini</h4>
+        <p class="muted">Compacto y portátil — 10W, Bluetooth 5.2</p>
+        <div class="product-footer">
+          <strong class="price">$49</strong>
+          <button class="btn buy-button" data-product="Vibe Mini">Comprar</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/vibe-home.svg" alt="Vibe Home" class="product-img">
+        </div>
+        <h4>Vibe Home</h4>
+        <p class="muted">Sistema de hogar — 60W, Wi‑Fi, multiroom</p>
+        <div class="product-footer">
+          <strong class="price">$199</strong>
+          <button class="btn buy-button" data-product="Vibe Home">Comprar</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/vibe-studio.svg" alt="Vibe Studio" class="product-img">
+        </div>
+        <h4>Vibe Studio</h4>
+        <p class="muted">Profesional — 120W, entrada balanceda, EQ</p>
+        <div class="product-footer">
+          <strong class="price">$399</strong>
+          <button class="btn buy-button" data-product="Vibe Studio">Comprar</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Reviews y especificaciones</h3>
+      <p>Nos apasiona el sonido. Aquí encontrarás altavoces diseñados para distintos usos: portátil, doméstico y estudio. Cada modelo busca equilibrio entre rendimiento y diseño.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contacto</h3>
+      <form id="contact-form">
+        <label>
+          Nombre
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> VibeCode Audio — Sonido con intención</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
